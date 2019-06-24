@@ -72,14 +72,38 @@ namespace Petle_Wzorki
                     Space();
                 StarLn();
             }
+        }
+
+        static void Z_Lustrzane(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                Star();
+            }
+            NewLine();
+
+            for (int i = 0; i < n; i++)
+            {
+                for(int j=0; j<n-1-i; j++)
+                    Space();
+                StarLn();
+            }
+
+            for (int i = 0; i < n; i++)
+                Star();
+
 
         }
 
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
             Prostokat(5, 7);
             Console.WriteLine();
             LiteraX(9);
+            Console.WriteLine();
+            Z_Lustrzane(10);
+            Console.WriteLine();
+
         }
     }
 }
