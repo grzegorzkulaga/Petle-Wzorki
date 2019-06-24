@@ -186,6 +186,51 @@ namespace Petle_Wzorki
             NewLine();
         }
 
+        static void LiteraP(int n)
+        {
+            for (int i = 0; i < n - 1; i++)
+            {
+                Star();
+            }
+            NewLine();
+
+            for (int i = 0; i < n / 2 - 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == 0)
+                    {
+                        Star();
+                    }
+                    else if (j == n - 1)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                Star();
+            }
+            NewLine();
+
+            for (int i = 0; i < n / 2 - 1; i++)
+            {
+                StarLn();
+            }
+            NewLine();
+        }
+
+        static void LiteraB(int n)
+        {
+
+        }
+
         static void Main(string[] args)
         {
             Prostokat(5, 7);
@@ -199,6 +244,11 @@ namespace Petle_Wzorki
             Klepsydra(5);
             Console.WriteLine();
             Klepsydrav2(7);
+            Console.WriteLine();
+            LiteraP(8);
+            Console.WriteLine();
+            LiteraB(8);
+
         }
     }
 }
