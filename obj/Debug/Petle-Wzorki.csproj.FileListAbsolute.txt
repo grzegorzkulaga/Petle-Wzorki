@@ -1,0 +1,7 @@
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\bin\Debug\Petle-Wzorki.exe.config
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\bin\Debug\Petle-Wzorki.exe
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\bin\Debug\Petle-Wzorki.pdb
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\obj\Debug\Petle-Wzorki.csprojAssemblyReference.cache
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\obj\Debug\Petle-Wzorki.csproj.CoreCompileInputs.cache
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\obj\Debug\Petle-Wzorki.exe
+C:\Users\GregoreK\Documents\GitHub\Petle-Wzorki\Petle-Wzorki\obj\Debug\Petle-Wzorki.pdb
