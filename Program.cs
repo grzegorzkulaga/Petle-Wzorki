@@ -77,9 +77,7 @@ namespace Petle_Wzorki
         static void Z_Lustrzane(int n)
         {
             for (int i = 0; i < n; i++)
-            {
                 Star();
-            }
             NewLine();
 
             for (int i = 0; i < n; i++)
