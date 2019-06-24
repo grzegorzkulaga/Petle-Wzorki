@@ -89,7 +89,23 @@ namespace Petle_Wzorki
 
             for (int i = 0; i < n; i++)
                 Star();
+        }
 
+        static void Z(int n)
+        {
+            for (int i = 0; i < n; i++)
+                Star();
+            NewLine();
+
+            for(int i=0; i<n; i++)
+            {
+                for (int j = 0; j < i; j++)
+                    Space();
+                StarLn();
+            }
+            for (int i = 0; i < n; i++)
+                Star();
+            NewLine();
 
         }
 
@@ -101,6 +117,7 @@ namespace Petle_Wzorki
             Console.WriteLine();
             Z_Lustrzane(10);
             Console.WriteLine();
+            Z(10);
 
         }
     }
