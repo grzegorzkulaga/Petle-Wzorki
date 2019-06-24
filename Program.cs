@@ -284,7 +284,22 @@ namespace Petle_Wzorki
                 Star();
             }
             NewLine();
+        }
 
+        static void LiteraK(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                Star();
+                for (int j = n / 2; j < n; j++)
+                {
+                    if (j == i || j == n - i - 1)
+                        Star();
+                    else
+                        Space();
+                }
+                NewLine();
+            }
         }
 
         static void Main(string[] args)
@@ -304,6 +319,9 @@ namespace Petle_Wzorki
             LiteraP(8);
             Console.WriteLine();
             LiteraB(8);
+            Console.WriteLine();
+            LiteraK(8);
+
 
         }
     }
