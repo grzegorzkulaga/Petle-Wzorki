@@ -347,6 +347,20 @@ namespace Petle_Wzorki
 
         }
 
+        static void Cyfra7(int n)
+        {
+            for (int i = 0; i < n; i++)
+                Star();
+            NewLine();
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n - 1 - i; j++)
+                    Space();
+                StarLn();
+            }
+        }
+
         static void Main(string[] args)
         {
             Prostokat(5, 7);
@@ -368,6 +382,8 @@ namespace Petle_Wzorki
             LiteraK(8);
             Console.WriteLine();
             LiteraR(8);
+            Console.WriteLine();
+            Cyfra7(8);
 
 
         }
