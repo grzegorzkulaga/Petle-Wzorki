@@ -152,6 +152,40 @@ namespace Petle_Wzorki
             NewLine();
         }
 
+        static void Klepsydrav2(int n)
+        {
+            if (n < 3) throw new ArgumentException("zbyt mały rozmiar");
+            if (n % 2 == 0) n = n + 1;
+
+            for (int i = 0; i < n; i++)
+                Star();
+            NewLine();
+
+            for (int i = 0; i < n / 2; i++)
+            {
+                for (int j = 0; j < i; j++)
+                    Space();
+                Star();
+                for (int j = 0; j < n - 3 - 2 * i; j++)
+                    Space();
+                StarLn();
+            }
+
+            for (int i = 0; i < n / 2; i++)
+            {
+                for (int j = 0; j < n / 2 - 1 - i; j++)
+                    Space();
+                Star();
+                for (int j = 0; j < 2 * i; j++)
+                    Space();
+                StarLn();
+            }
+
+            for (int i = 0; i < n; i++)
+                Star();
+            NewLine();
+        }
+
         static void Main(string[] args)
         {
             Prostokat(5, 7);
@@ -163,7 +197,8 @@ namespace Petle_Wzorki
             Z(10);
             Console.WriteLine();
             Klepsydra(5);
-
+            Console.WriteLine();
+            Klepsydrav2(7);
         }
     }
 }
