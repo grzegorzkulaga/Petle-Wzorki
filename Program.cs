@@ -228,6 +228,62 @@ namespace Petle_Wzorki
 
         static void LiteraB(int n)
         {
+            for (int i = 0; i < n - 1; i++)
+            {
+                Star();
+            }
+            NewLine();
+
+            for (int i = 0; i < n / 2 - 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == 0)
+                    {
+                        Star();
+                    }
+                    else if (j == n - 1)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                Star();
+            }
+            NewLine();
+
+            //dół
+            for (int i = 0; i < n / 2 - 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == 0)
+                    {
+                        Star();
+                    }
+                    else if (j == n - 1)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+
+            for (int i = 0; i < n - 1; i++)
+            {
+                Star();
+            }
+            NewLine();
 
         }
 
