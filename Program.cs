@@ -427,22 +427,22 @@ namespace Petle_Wzorki
             {
                 if (i == 0)
                 {
-                    Console.Write(" ");
+                    Space();
                 }
                 else
                 {
-                    Console.Write("*");
+                    Star();
                 }
             }
             for (int i = 0; i <= n / 4; i++)
             {
-                Console.WriteLine("*");
+                StarLn();
             }
             for (int i = 0; i < n; i++)
             {
-                Console.Write("*");
+                Star();
             }
-            Console.WriteLine();
+            NewLine();
 
             for (int j = 0; j < n / 2 - 1; j++)
             {
@@ -450,15 +450,15 @@ namespace Petle_Wzorki
                 {
                     if (i == 0)
                     {
-                        Console.Write("*");
+                        Star();
                     }
                     else if (i == n)
                     {
-                        Console.WriteLine("*");
+                        StarLn();
                     }
                     else
                     {
-                        Console.Write(" ");
+                        Space();
                     }
 
                 }
@@ -468,12 +468,12 @@ namespace Petle_Wzorki
             {
                 if (k == 0)
                 {
-                    Console.Write(" ");
+                    Space();
                 }
 
                 else
                 {
-                    Console.Write("*");
+                    Star();
                 }
 
             }
