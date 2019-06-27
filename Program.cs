@@ -545,6 +545,54 @@ namespace Petle_Wzorki
             NewLine();
         }
 
+        static void Cyfra4(int n)
+        {
+            int x = n / 2;
+            for (int i = 0; i < n; i++)
+            {
+                if (i < n / 2)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        if (j == n / 2)
+                        {
+                            Star();
+                        }
+                        else if (j == x)
+                        {
+                            Star();
+                        }
+                        else
+                        {
+                            Space();
+                        }
+                    }
+                    x--;
+                }
+                else if (i == n / 2)
+                {
+                    for (int j = 0; j < n / 2 + 1; j++)
+                    {
+                        Star();
+                    }
+                }
+                else if (i > n / 2)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        if (j == n / 2)
+                        {
+                            Star();
+                        }
+                        else
+                        {
+                            Space();
+                        }
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
         static void Cyfra5(int n)
         {
             for (int i = 0; i < n - 1; i++)
@@ -756,6 +804,8 @@ namespace Petle_Wzorki
             Cyfra7(8);
             Console.WriteLine();
             Cyfra3(8);
+            Console.WriteLine();
+            Cyfra4(8);
             Console.WriteLine();
             Cyfra5(8);
             Console.WriteLine();
