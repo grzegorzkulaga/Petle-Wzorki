@@ -421,6 +421,64 @@ namespace Petle_Wzorki
             NewLine();
         }
 
+        static void Cyfra6(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (i == 0)
+                {
+                    Console.Write(" ");
+                }
+                else
+                {
+                    Console.Write("*");
+                }
+            }
+            for (int i = 0; i <= n / 4; i++)
+            {
+                Console.WriteLine("*");
+            }
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+
+            for (int j = 0; j < n / 2 - 1; j++)
+            {
+                for (int i = 0; i < n + 1; i++)
+                {
+                    if (i == 0)
+                    {
+                        Console.Write("*");
+                    }
+                    else if (i == n)
+                    {
+                        Console.WriteLine("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+
+                }
+            }
+
+            for (int k = 0; k < n; k++)
+            {
+                if (k == 0)
+                {
+                    Console.Write(" ");
+                }
+
+                else
+                {
+                    Console.Write("*");
+                }
+
+            }
+        }
+
         static void Main(string[] args)
         {
             Prostokat(5, 7);
@@ -446,6 +504,10 @@ namespace Petle_Wzorki
             Cyfra7(8);
             Console.WriteLine();
             Cyfra3(8);
+            Console.WriteLine();
+            Cyfra6(8);
+            Console.WriteLine();
+
 
 
         }
