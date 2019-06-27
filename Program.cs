@@ -17,18 +17,18 @@ namespace Petle_Wzorki
 
         public static void TrojkatProstokatny(int n)
         {
-            for (int i = n-1; i >= 0; i--)
+            for (int i = n - 1; i >= 0; i--)
             {
                 for (int j = i; j >= 0; j--)
                     Space();
-                for (int j = i; j < n-1; j++)
+                for (int j = i; j < n - 1; j++)
                     Star();
                 StarLn();
             }
 
-            for(int a=0; a<n+1; a++)
+            for (int a = 0; a < n + 1; a++)
             {
-                for(int b=0; a>b;b++)
+                for (int b = 0; a > b; b++)
                 {
                     Star();
                 }
@@ -90,16 +90,16 @@ namespace Petle_Wzorki
             }
             NewLine();
 
-            for(int j=1; j<m-1; j++)
+            for (int j = 1; j < m - 1; j++)
             {
                 Star();
-                for (int i = 1; i < n-1; i++)
+                for (int i = 1; i < n - 1; i++)
                     Space();
 
                 StarLn();
             }
 
-            for(int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 Star();
             }
@@ -149,7 +149,7 @@ namespace Petle_Wzorki
 
             for (int i = 0; i < n; i++)
             {
-                for(int j=0; j<n-1-i; j++)
+                for (int j = 0; j < n - 1 - i; j++)
                     Space();
                 StarLn();
             }
@@ -164,7 +164,7 @@ namespace Petle_Wzorki
                 Star();
             NewLine();
 
-            for(int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < i; j++)
                     Space();
@@ -402,7 +402,7 @@ namespace Petle_Wzorki
             }
             NewLine();
 
-            for (int i = 0; i < n/2-1; i++)
+            for (int i = 0; i < n / 2 - 1; i++)
             {
                 Star();
                 for (int j = 0; j < 2 * i + 1; j++)
@@ -580,9 +580,6 @@ namespace Petle_Wzorki
             Console.WriteLine();
             Cyfra6(8);
             Console.WriteLine();
-
-
-
         }
     }
 }
