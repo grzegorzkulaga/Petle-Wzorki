@@ -15,6 +15,26 @@ namespace Petle_Wzorki
         static void SpaceLn() => Console.WriteLine(" ");
         static void NewLine() => Console.WriteLine();
 
+        public static void TrojkatProstokatny(int n)
+        {
+            for (int i = n-1; i >= 0; i--)
+            {
+                for (int j = i; j >= 0; j--)
+                    Space();
+                for (int j = i; j < n-1; j++)
+                    Star();
+                StarLn();
+            }
+
+            for(int a=0; a<n+1; a++)
+            {
+                for(int b=0; a>b;b++)
+                {
+                    Star();
+                }
+                SpaceLn();
+            }
+        }
         public static void Prostokat(int n, int m)
         {
             for (int i = 0; i < n; i++)
@@ -481,6 +501,8 @@ namespace Petle_Wzorki
 
         static void Main(string[] args)
         {
+            TrojkatProstokatny(8);
+            Console.WriteLine();
             Prostokat(5, 7);
             Console.WriteLine();
             LiteraX(9);
