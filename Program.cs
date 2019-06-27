@@ -36,6 +36,22 @@ namespace Petle_Wzorki
             }
         }
 
+        public static void TrojkatProstokatnyOdwrocony(int n)
+        {
+            for (int i = n; i >= 0; i--)
+            {
+                for (int j = n; j - i >= 0; j--)
+                {
+                    Space();
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    Star();
+                }
+                NewLine();
+            }
+        }
+
         public static void Romb(int n)
         {
             for (int i = 1; i <= n; i++)
@@ -533,6 +549,8 @@ namespace Petle_Wzorki
         static void Main(string[] args)
         {
             TrojkatProstokatny(8);
+            Console.WriteLine();
+            TrojkatProstokatnyOdwrocony(8);
             Console.WriteLine();
             Romb(8);
             Console.WriteLine();
