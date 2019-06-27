@@ -35,6 +35,37 @@ namespace Petle_Wzorki
                 SpaceLn();
             }
         }
+
+        public static void Romb(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 0; j < n - i; j++)
+                    Space();
+
+                for (int j = 1; j <= i; j++)
+                    Star();
+
+                for (int k = 1; k < i; k++)
+                    Star();
+                NewLine();
+            }
+
+            for (int i = n - 1; i >= 1; i--)
+            {
+                for (int j = 0; j < n - i; j++)
+                    Space();
+
+                for (int j = 1; j <= i; j++)
+                    Star();
+
+                for (int k = 1; k < i; k++)
+                    Star();
+                NewLine();
+            }
+            NewLine();
+        }
+
         public static void Prostokat(int n, int m)
         {
             for (int i = 0; i < n; i++)
@@ -502,6 +533,8 @@ namespace Petle_Wzorki
         static void Main(string[] args)
         {
             TrojkatProstokatny(8);
+            Console.WriteLine();
+            Romb(8);
             Console.WriteLine();
             Prostokat(5, 7);
             Console.WriteLine();
