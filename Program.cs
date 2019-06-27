@@ -414,6 +414,63 @@ namespace Petle_Wzorki
 
         }
 
+        static void LiteraS(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (i == 0)
+                {
+                    Space();
+                }
+                else
+                {
+                    Star();
+                }
+            }
+            for (int i = 0; i <= n / 4; i++)
+            {
+                StarLn();
+            }
+            for (int i = 0; i < n - 1; i++)
+            {
+                if (i == 0)
+                {
+                    Space();
+                }
+                else
+                {
+                    Star();
+                }
+            }
+            NewLine();
+
+            for (int i = 0; i < n / 2 - 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == n - 1)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+            for (int i = 0; i < n; i++)
+            {
+                if (i == n - 1)
+                {
+                    Space();
+                }
+                else
+                {
+                    Star();
+                }
+            }
+        }
+
         static void Cyfra7(int n)
         {
             for (int i = 0; i < n; i++)
@@ -546,6 +603,8 @@ namespace Petle_Wzorki
             }
         }
 
+
+
         static void Main(string[] args)
         {
             TrojkatProstokatny(8);
@@ -573,6 +632,8 @@ namespace Petle_Wzorki
             LiteraK(8);
             Console.WriteLine();
             LiteraR(8);
+            Console.WriteLine();
+            LiteraS(8);
             Console.WriteLine();
             Cyfra7(8);
             Console.WriteLine();
