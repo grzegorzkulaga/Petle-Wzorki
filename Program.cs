@@ -645,7 +645,83 @@ namespace Petle_Wzorki
             }
         }
 
+        static void Cyfra9(int n)
+        {
+            for (int i = 0; i < n - 1; i++)
+            {
+                if (i == 0)
+                {
+                    Space();
+                }
+                else
+                {
+                    Star();
+                }
+            }
+            NewLine();
 
+            for (int i = 0; i < n / 2 - 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == 0)
+                    {
+                        Star();
+                    }
+                    else if (j == n - 1)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                if (i == 0)
+                {
+                    Space();
+                }
+                else
+                {
+                    Star();
+                }
+            }
+            NewLine();
+            for (int i = 0; i < n / 2 - 1; i++)
+            {
+                for (int j = 1; j < n + 1; j++)
+                {
+                    if (j == n)
+                    {
+                        StarLn();
+                    }
+                    else if (j == 1 && i == 2)
+                    {
+                        Star();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+            for (int i = 0; i < n - 1; i++)
+            {
+                if (i == 0)
+                {
+                    Space();
+                }
+                else
+                {
+                    Star();
+                }
+            }
+            NewLine();
+        }
 
         static void Main(string[] args)
         {
@@ -684,6 +760,8 @@ namespace Petle_Wzorki
             Cyfra5(8);
             Console.WriteLine();
             Cyfra6(8);
+            Console.WriteLine();
+            Cyfra9(8);
             Console.WriteLine();
         }
     }
