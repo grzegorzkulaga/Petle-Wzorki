@@ -436,6 +436,84 @@ namespace Petle_Wzorki
             Console.WriteLine();
         }
 
+        static void LiteraV2(int n)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (j == 1)
+                    {
+                        Star();
+
+                    }
+                    else if (j == n - 1)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+
+            for (int b = 0; b < 2; b++)
+            {
+                for (int i = 0; i < n - 1; i++)
+                {
+
+                    if (i == 2)
+                    {
+                        Star();
+
+                    }
+                    else if (i == n - 2)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+
+                }
+            }
+            for (int w = 0; w < 2; w++)
+            {
+                for (int l = 0; l < 6; l++)
+                {
+                    if (l == 3)
+                    {
+                        Star();
+                    }
+                    else if (l == 5)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+            for (int p = 0; p < 2; p++)
+            {
+
+                for (int t = 0; t < 5; t++)
+                {
+                    if (t == 4)
+                    {
+                        StarLn();
+                    }
+                    else
+                    {
+                        Space();
+                    }
+                }
+            }
+        }
+
         static void LiteraS(int n)
         {
             for (int i = 0; i < n; i++)
@@ -822,6 +900,8 @@ namespace Petle_Wzorki
             LiteraR(8);
             Console.WriteLine();
             literaV(8);
+            Console.WriteLine();
+            LiteraV2(8);
             Console.WriteLine();
             LiteraS(8);
             Console.WriteLine();
