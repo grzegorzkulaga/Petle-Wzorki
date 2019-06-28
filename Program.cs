@@ -413,6 +413,28 @@ namespace Petle_Wzorki
             }
 
         }
+        static void literaV(int n)
+        {
+            for (int i = 0, p = 1, j = n / 2 + 1; i < n; i += 2, p++, j -= 2)
+            {
+                if (i + 2 >= n)
+                {
+                    Console.WriteLine("*".PadLeft(p).PadRight(p));
+                    Console.WriteLine("*".PadLeft(p).PadRight(p));
+                }
+                else if (i == 0 && n % 2 != 0)
+                {
+                    j++;
+                    Console.WriteLine("{0}{1}{2}", "*".PadLeft(p), new string(' ', j), "*".PadRight(p));
+                }
+                else
+                {
+                    Console.WriteLine("{0}{1}{2}", "*".PadLeft(p), new string(' ', j), "*".PadRight(p));
+                    Console.WriteLine("{0}{1}{2}", "*".PadLeft(p), new string(' ', j), "*".PadRight(p));
+                }
+            }
+            Console.WriteLine();
+        }
 
         static void LiteraS(int n)
         {
@@ -798,6 +820,8 @@ namespace Petle_Wzorki
             LiteraK(8);
             Console.WriteLine();
             LiteraR(8);
+            Console.WriteLine();
+            literaV(8);
             Console.WriteLine();
             LiteraS(8);
             Console.WriteLine();
